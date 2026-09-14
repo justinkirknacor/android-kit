@@ -1,4 +1,124 @@
 <resources>
-    <style name="Base.Theme.AndroidKit" parent="Theme.Material3.DayNight.NoActionBar" />
+    <style name="Base.Theme.AndroidKit" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textViewStyle">@style/Widget.AndroidKit.TextView</item>
+        <item name="bottomNavigationStyle">@style/Widget.AndroidKit.BottomNavigation</item>
+    </style>
+
     <style name="Theme.AndroidKit" parent="Base.Theme.AndroidKit" />
+
+    <style name="Widget.AndroidKit.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_11</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_13</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_14</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/google_sans_regular</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+        <item name="android:textSize">@dimen/font_15</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:textSize">@dimen/font_16</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:textSize">@dimen/font_17</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/google_sans_medium</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:textSize">@dimen/font_19</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_21</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_23</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_26</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.DisplaySmall" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_29</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_33</item>
+    </style>
+
+    <style name="TextAppearance.AndroidKit.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/google_sans_semibold</item>
+        <item name="android:fontFamily">@font/google_sans_semibold</item>
+        <item name="android:textSize">@dimen/font_38</item>
+    </style>
+
+    <style name="Widget.AndroidKit.BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.PrimarySurface">
+        <item name="itemActiveIndicatorStyle">@style/Widget.AndroidKit.BottomNavigation.ActiveIndicator</item>
+        <item name="itemIconSize">@dimen/dimen_24</item>
+        <item name="itemIconTint">@color/bottom_navigation_menu_item_color</item>
+        <item name="itemTextColor">@color/bottom_navigation_menu_item_color</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.AndroidKit.LabelSmall</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.AndroidKit.LabelSmall</item>
+        <item name="itemTextAppearanceActiveBoldEnabled">false</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.AndroidKit.BottomNavigation.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">@dimen/dimen_0</item>
+        <item name="android:height">@dimen/dimen_0</item>
+        <item name="android:color">@android:color/transparent</item>
+    </style>
 </resources>
