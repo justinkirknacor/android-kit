@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidKit</string>
+
+    <string name="home">Home</string>
+
+    <string name="menu">Menu</string>
 </resources>
